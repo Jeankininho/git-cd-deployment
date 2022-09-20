@@ -1,0 +1,13 @@
+
+name: 'Preview PR'
+
+on: 
+  workflow_dispatch:
+  pull_request:
+    branches:    
+      - developer
+    types: [opened, synchronize, edited, reopened]
+    
+permissions: 
+  write-all
+  
